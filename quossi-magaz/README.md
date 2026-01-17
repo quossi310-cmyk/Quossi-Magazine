@@ -1,3 +1,3 @@
 # Quossi Magazine
 
-Discover the latest in style and culture.
+Discover the latest in style and culture.# Quossi-Magazine
