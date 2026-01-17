@@ -74,7 +74,7 @@ export default function MagazineLanding() {
   };
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-zinc-900 via-neutral-800 to-stone-900 overflow-x-hidden">
+    <div className="relative min-h-screen supports-[height:100dvh]:min-h-[100dvh] bg-gradient-to-br from-zinc-900 via-neutral-800 to-stone-900 overflow-x-hidden">
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes float {
           0%, 100% { transform: translateY(0); }
@@ -164,7 +164,7 @@ export default function MagazineLanding() {
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden flex flex-col">
         {/* Navbar */}
-        <nav className="fixed top-0 left-0 w-full z-50 p-4 sm:p-12 flex justify-start backdrop-blur-sm bg-gradient-to-b from-black/20 to-transparent pointer-events-none">
+        <nav className="fixed top-0 left-0 w-full z-50 p-6 sm:p-12 flex justify-start backdrop-blur-sm bg-gradient-to-b from-black/20 to-transparent pointer-events-none">
           <div className="group relative cursor-pointer pointer-events-auto" onClick={handleScrollTop}>
             <span className="text-amber-400 font-[family-name:var(--font-playfair-display)] font-bold text-xl tracking-[0.2em] uppercase transition-all duration-300 group-hover:text-amber-300 group-hover:drop-shadow-[0_0_10px_rgba(251,191,36,0.6)]">
               Home
@@ -173,16 +173,16 @@ export default function MagazineLanding() {
           </div>
         </nav>
 
-        <div className="relative z-10 flex flex-col lg:flex-row min-h-screen flex-grow">
+        <div className="relative z-10 flex flex-col lg:flex-row min-h-screen supports-[height:100dvh]:min-h-[100dvh] flex-grow">
         {/* Left side - Logo */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center p-4 sm:p-12 lg:p-16">
+        <div className="w-full lg:w-1/2 flex items-center justify-center px-2 py-20 sm:p-12 lg:p-16">
           <div className="text-center lg:text-left">
             {/* Animated letters */}
-            <div className="mb-2 overflow-hidden">
+            <div className="mb-4 lg:mb-2 overflow-hidden leading-[0.85] lg:leading-normal">
               {['Q', 'U', 'O', 'S', 'S', 'I'].map((letter, i) => (
                 <span
                   key={i}
-                  className={`inline-block text-[15vw] sm:text-[10rem] md:text-[12rem] lg:text-8xl xl:text-9xl 2xl:text-[11rem] font-[family-name:var(--font-playfair-display)] font-bold text-amber-400 tracking-tight transition-all duration-1000 ${
+                  className={`inline-block text-[25vw] sm:text-[10rem] md:text-[12rem] lg:text-8xl xl:text-9xl 2xl:text-[11rem] font-[family-name:var(--font-playfair-display)] font-bold text-amber-400 tracking-tight transition-all duration-1000 ${
                     isLoaded
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-20'
@@ -210,7 +210,7 @@ export default function MagazineLanding() {
             </div>
 
             <div
-              className={`mb-8 text-lg sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-[family-name:var(--font-playfair-display)] text-amber-400 tracking-[0.5em] md:tracking-[1.2em] uppercase transition-all duration-1000 ${
+              className={`mb-8 text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-[family-name:var(--font-playfair-display)] text-amber-400 tracking-[0.3em] sm:tracking-[0.5em] md:tracking-[1.2em] uppercase transition-all duration-1000 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               onMouseEnter={() => setIsMagazineHovered(true)}
@@ -230,7 +230,7 @@ export default function MagazineLanding() {
             <div className="flex items-center justify-center lg:justify-start mb-8">
               <div
                 className={`h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent transition-all duration-1500 ${
-                  isLoaded ? 'w-32 sm:w-60 md:w-80 lg:w-40 xl:w-60 2xl:w-80 opacity-100' : 'w-0 opacity-0'
+                  isLoaded ? 'w-48 sm:w-60 md:w-80 lg:w-40 xl:w-60 2xl:w-80 opacity-100' : 'w-0 opacity-0'
                 }`}
                 style={{
                   transitionDelay: '800ms',
@@ -246,7 +246,7 @@ export default function MagazineLanding() {
         </div>
 
         {/* Right side - Description */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center p-4 sm:p-12 lg:p-16">
+        <div className="w-full lg:w-1/2 flex items-center justify-center px-6 py-12 sm:p-12 lg:p-16">
           <div className="max-w-xl">
             {/* Vertical divider line */}
             <div
