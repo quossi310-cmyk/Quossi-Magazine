@@ -19,7 +19,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "QUOSSI MAGAZ",
+  title: "QUOSSI MAGAZINE",
   description: "Discover the latest in style and culture",
 };
 
